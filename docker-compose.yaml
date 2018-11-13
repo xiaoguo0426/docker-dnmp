@@ -1,0 +1,45 @@
+version: "2"
+
+services:
+
+  mysql:
+    build: mysql
+    container_name: mysql
+    restart: always
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_USER: "xiaoguo"
+      MYSQL_PASSWORD: "123123"
+      MYSQL_ROOT_PASSWORD: "123123"
+
+  redis:
+    image: redis:3.2
+    container_name: redis
+    restart: always
+    ports:
+        - 6379:6379
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    privileged: true
+    ports:
+        - 80:80
+    volumes:
+        - ./nginx/conf.d:/etc/nginx/conf.d
+    links:
+        - php
+
+  php:
+    image: php:7.2-fpm
+    restart: always
+    container_name: php
+    ports:
+        - "9000:9000"
+    volumes:
+        - ./www:/data/wwwroot
+    links:
+        - mysql
+        - redis
