@@ -1,12 +1,12 @@
-使用
+Usage
 
 ```
-$ git clone
+$ git clone https://github.com/xiaoguo0426/docker-dnmp
 
 $ docker-compose up -d
 ```
 
-运行
+Running
 ```
 docker-compose build     # build dockerfile
 docker-compose up        # 构建启动 -d 后台运行
@@ -16,17 +16,17 @@ docker-compose restart   # 重启
 docker-compose down      # 清除
 ```
 
-访问
+Test
 ```
 http://localhost/phpinfo.php
 ```
 
-mysql访问
+Mysql
 ```
 mysql -h 127.0.0.1 -P3306 -uroot -p123123
 ```
 
-redis访问
+Redis
 ```
 redis-cli -h 127.0.0.1 -p 6379
 ```
