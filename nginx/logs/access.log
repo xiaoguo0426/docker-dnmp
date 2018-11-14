@@ -1,0 +1,3 @@
+172.19.0.1 - - [14/Nov/2018:02:56:20 +0000] "GET / HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/70.0.3538.67 Chrome/70.0.3538.67 Safari/537.36" "-"
+172.19.0.1 - - [14/Nov/2018:02:56:23 +0000] "GET /index.php HTTP/1.1" 200 85114 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/70.0.3538.67 Chrome/70.0.3538.67 Safari/537.36" "-"
+172.19.0.1 - - [14/Nov/2018:02:56:24 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/index.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/70.0.3538.67 Chrome/70.0.3538.67 Safari/537.36" "-"

@@ -1,0 +1,2 @@
+2018/11/14 02:56:20 [error] 8#8: *2 "/data/wwwroot/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2018/11/14 02:56:24 [error] 8#8: *2 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
