@@ -1,0 +1,13 @@
+{
+    "name": "xiaoguo/test",
+    "description": "111",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaogguo0426",
+            "email": "740644717@qq.com"
+        }
+    ],
+    "require": {}
+}

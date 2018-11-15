@@ -13,8 +13,8 @@ services:
       MYSQL_PASSWORD: "123123"
       MYSQL_ROOT_PASSWORD: "123123"
     volumes:
-        - ./mysql/data:/var/lib/mysql
-        - ./mysql/logs:/var/log/mysql
+        - ./mysql/data/:/var/lib/mysql/:rw
+        - ./mysql/logs/:/var/log/mysql/:rw
         - ./mysql/conf/my.cnf:/etc/mysql/my.cnf
   redis:
     image: redis:3.2
@@ -22,7 +22,6 @@ services:
     restart: always
     ports:
         - 6379:6379
-
   nginx:
     image: nginx
     container_name: nginx
