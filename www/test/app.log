@@ -1,0 +1,5 @@
+[2018-11-18 13:45:19] name.WARNING: Foo [] []
+[2018-11-18 13:48:06] name.WARNING: Foo [] []
+[2018-11-18 13:48:06] name.ERROR: 123123123 [] []
+[2018-11-18 13:49:43] name.WARNING: Foo [] []
+[2018-11-18 13:49:43] name.WARNING: Adding a new user {"username":"Seldaek"} []

@@ -46,3 +46,29 @@ services:
     links:
         - mysql
         - redis
+
+  beanstalkd:
+    image: schickling/beanstalkd
+    restart: always
+    container_name: beanstalkd
+    ports:
+      - "11300:11300"
+    depends_on:
+      - php
+  composer:
+    image: composer/composer:latest
+    volumes:
+    #网站目录
+      - ./app:/app:rw
+    working_dir: /app/webroot
+    command: composer install
+  node:
+    image: node:8
+    container_name: node.js
+    ports:
+      - "8888:8888"
+    restart: always
+    working_dir: /usr/src/app
+    volumes:
+      - ./node/node_modules:/usr/src/app/node_modules
+      - ./node/nodejs:/usr/src/app

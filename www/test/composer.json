@@ -1,0 +1,7 @@
+{
+    "name": "xiaoguo/test",
+    "license": "MIT",
+    "require": {
+      "monolog/monolog": "1.0.*"
+    }
+}
