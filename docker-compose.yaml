@@ -46,7 +46,6 @@ services:
     links:
         - mysql
         - redis
-
   beanstalkd:
     image: schickling/beanstalkd
     restart: always

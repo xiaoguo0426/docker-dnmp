@@ -3,3 +3,6 @@
 2018/11/17 13:21:39 [error] 8#8: *2 "/data/wwwroot/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
 2018/11/17 13:21:42 [error] 8#8: *2 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
 2018/11/18 13:42:54 [error] 7#7: *1 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2018/11/22 16:08:36 [error] 7#7: *2 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2018/11/23 14:21:08 [error] 7#7: *29 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/weather/index.php"
+2018/11/23 14:21:08 [error] 7#7: *29 open() "/data/wwwroot/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
